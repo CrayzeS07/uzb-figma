@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }  
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 200px;
+  }
+  .ul{
+    display: flex;
+    column-gap: 40px;
+  }
+  .li a{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    transition-duration: 0.4s;
+    @extend %roboto
+  }
+  .li a:hover{
+    color: #0082F4;
+    font-size: 22px;
+  }
+  .header_block{
+    padding-top: 20px;
+  }
+  .btn{
+    padding-top: 15px;
+  }
+  %roboto{
+    font-family: 'Roboto', sans-serif;
+  }
+  .button1{
+    width: 161px;
+    height: 52px;
+    border: none;
+    border-radius: 6px;
+    background: #0082F4;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    @extend %roboto;
+    transition-duration: 0.4s;
+  }
+  .button1:hover{
+    font-size: 22px; 
+  }
+  .block_text_1{
+    h3{
+        color: #0080FD;
+        font-size:30px;
+        font-weight: 400;
+        @extend %roboto;
+    }
+  }
+  .block_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 224px;    
+  }
+  .btn-1{
+    display: flex;
+    column-gap: 30px;
+    padding-top: 30px;
+  }
+  .block_text_2{
+    padding-top: 10px;
+    max-width: 531px;
+    h4{
+    color: #000;
+    font-size: 60.55px;
+    font-weight: 700;
+    @extend %roboto;
+    }
+  }
+  .span{
+    color: #0082F4;
+  }
+  .block_text_3{
+    max-width: 436px;
+    padding-top: 20px;
+    p{
+     color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+    @extend %roboto;
+    }
+  }
+  .button2{
+    width: 194px;
+    height: 63px;
+    border-radius: 10px;
+    background: #0082F4;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    @extend %roboto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .button2:hover{
+    font-size: 22px;
+  }
+  .button3{
+    width: 194px;
+    height: 63px;
+    border-radius: 10px;
+    border: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    @extend %roboto;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  .burger_menu{
+    display: none;
+  }
+  .button3:hover{
+    font-size: 20px;
+  }
+  @media(max-width:1200px){
+    .header{
+        padding: 36px 150px;
+      }
+      .block_1{
+        padding: 180px 100px; 
+      }
+      .block_text_2{
+        h4{
+             font-size:40px;
+        }
+      }
+      .btn-1{
+        column-gap: 20px;
+        display: block;
+      }
+      .btn_2{
+        padding-top: 20px;
+      }
+  }
+  @media(max-width:990px){
+    .header{
+        padding: 36px 70px;
+      }
+      .block_1{
+        padding: 80px 100px;   
+        flex-direction: column-reverse;  
+      }
+      .block_img{
+        display: flex;
+        justify-content: center;
+      }
+      .block_text_1{
+        display: flex;
+        justify-content: center;
+      }
+      .text_1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .text_2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      .btn-1{
+        display: flex;
+        justify-content: center;
+      }
+      .btn_2{
+        padding-top: 0px;
+      }
+      .ul{
+        column-gap: 20px;
+      }
+  }
+  @media(max-width:769px){
+  .header_block{
+    display: none;
+  }
+  .block_1{
+    padding: 80px 0px;   
+  }
+  .img11{
+    max-width: 400px;
+  }
+  .block_text_3{
+    padding: 20px 20px;
+  }
+  .block_text_2{
+    padding: 10px 20px;
+  }
+  }
+  @media(max-width:447px){
+   .btn{
+    display: none;
+   }
+   .burger_menu{
+    display: flex;
+    padding-top: 20px;
+   }
+   .img44{
+    width: 40px;
+    height: 40px;
+   }
+   .btn-1{
+    display: block;
+   }
+   .btn_23{
+    display: flex;
+    justify-content: center;
+   }
+   .btn_2{
+    padding-top: 20px;
+   }
+   .img11{
+    max-width: 300px;
+   }
+   .block_1{
+    padding: 30px 0px;  
+   }
+  }
